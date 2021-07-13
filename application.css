@@ -1,0 +1,742 @@
+/*GLOBAL STYLES*/
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  /*Header logo_blanc.png */
+ nav{
+   display: flex;
+   padding: 1% 2%;
+   background-color: rgb(92, 88, 88);
+   justify-content: space-between;
+   align-items: center;
+ }
+  nav img{
+    width: 150px
+  }
+ 
+  /* Header left top three links(Menu) fixing there position, inline, inbetween spaces, fontsize and so on*/
+  .nav-links{
+    flex: 1;
+    text-align: right;
+
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative;
+  }
+  .nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+/*Hover Effect on the menu*/
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+/*-----------------------------------------------------------------------------Home Page-------------------------------------------------------*/
+  /*Header logo_dark.png*/
+  .logo-image {
+    display: flex;
+    justify-content: center;
+    } 
+.logo-image img{
+     width: 200px;
+      }
+.logo-image {
+    padding: 50px 50px 50px 50px;
+   } 
+   /* Main front image mr_coffee_salle.jpg*/
+  .main-image{
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+  .main-image {
+      display: flex;
+      justify-content: center;
+      } 
+  .main-image img{
+      width: 90%;
+      height: auto;
+    }
+
+  .main-image{
+    position: relative;
+  }  
+    /*text on the main image, fixing its position*/  
+   .text-block{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 10%;
+   left: 5%
+  } 
+.text-block h1{
+  font-size: 52px;
+}   
+
+ /*Text in the middle */
+ .text h2{
+  display: flex;
+  justify-content: center;
+  } 
+  .text h3{
+    display: flex;
+    justify-content: center;
+    } 
+ .text{
+   width: 80%;
+   color: rgb(20, 15, 5);
+  margin: auto;
+  text-align:center;
+  position:relative;
+  padding: 50px 50px 50px 50px;
+ }
+ 
+  
+/* media queries so that It will look good on mobile and tablet devices. 
+ */
+ @media(max-width:400px){
+ .text-block h1{
+    font-size: 13px;
+  }
+  .text h2{
+    font-size: 13px;
+  }
+  .text h3{
+    font-size: 13px;
+  }
+  .coll_new{
+    font-size: 13px;
+  }
+  .text3{
+    font-size: 13px;
+  }
+  .text4{
+    font-size: 13px;
+  }
+  .text1_on_contact p{
+    font-size:13px ;
+  }
+  .text2_on_contact p{
+    font-size:13px ;
+  }
+  .text3_on_contact p{
+      font-size:13px ;
+  }
+ } 
+
+  /*three rectangle/card*/
+ .row{
+   margin-top:10%;
+   display: flex;
+   justify-content: space-between;
+  
+ }
+ .coll{
+   flex-basis: 31%;
+   background:rgb(173, 169, 169);
+   border-radius: 10px;
+   margin-bottom: 5%;
+   padding:40px 10px;
+   box-sizing: border-box;
+  
+ }
+
+  /*Button */
+  .wrapper {
+    text-align: center;
+  }
+  .button {
+    display: block;
+    background-color: darkgray;
+    position: relative;
+    font-size: 13px;
+    padding: 12px 34px;
+    top: 28%;
+    margin: auto;
+  }
+  .txt_btn_bottpm h2{
+    display: flex;
+    justify-content: center;
+    }
+
+ /*Hover on the button */
+    .button {
+      transition-duration: 0.4s;
+    }
+    
+    .button:hover {
+      background-color: #e92949; 
+      color: white;
+    }
+ /*Text bottom of the button */
+.txt_btn_bottpm h2{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  }  
+   /*icon open logo */
+  .icon_open{
+    display: flex;
+    justify-content: left;
+    } 
+.icon_open img{
+     width: 100px;
+      }
+.icon_open {
+    padding: 20px 20px 0px 400px;
+   } 
+    /*Text in row column */
+   .row_new{
+    margin-top:5%;
+    display: flex;
+    justify-content:center;
+   }
+   .coll_new{
+     font-size: 20px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:40px 10px;
+    text-align: center;
+   }
+    /*second last text */
+   .text3{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    
+    }  
+     /*last text */
+    .text4{
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-size: 30px;
+      text-align: center;
+      
+      }  
+       
+      /*-----------------------------------------------*CODES FOR THE ABOUT PAGE---------------------------------------------------------------------------*/
+
+      /* making a row and two column one is text another is image which is in the right fixing their size */
+      .about_us{
+        width:80%;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom:5px;
+      }
+      .about_coll{
+        flex-basis: 48%;
+        padding: 30px 2px;
+      }
+      .about_coll img{
+        width: 70%;
+        height: 80%;
+
+      }
+      /* making a row and two column one is text another is image which is in the left fixing their size */
+      .about_us1{
+        width:80%;
+        margin: auto;
+        padding-top: 5px;
+        padding-bottom: 40px;
+      }
+      .about_col{
+        flex-basis: 48%;
+        padding: 30px 2px;
+      }
+      .about_col img{
+        width: 100%;
+      
+      }
+        /* fixing the texts of the first row where image is in the right  */
+
+        .about_coll h2{
+          font-size: 40px;
+          padding:0px 20px 20px 10px ;
+        }
+        .about_coll p{
+          font-size: 26px;
+          padding:20px 20px 20px 10px ;
+        }
+           /* fixing the texts of the first row where image is in the left  */
+
+           .about_col h2{
+            font-size: 40px;
+            padding:0px 20px 20px 10px ;
+           }
+           .about_col p{
+            font-size: 24px;
+            padding:20px 20px 20px 10px ;
+          }
+          /*--------------------------------------------------CONTACT PAGE--------------------------------------------------------*/
+
+     /* Setting up the form  */
+     .form-title h2{
+      display: flex;
+      justify-content: center;
+      } 
+  
+     .form-title h2{
+       width: 90%;
+       color: rgb(20, 15, 5);
+       font-size: 50px;
+      margin: auto;
+      text-align:center;
+      position:relative;
+      padding: 50px 50px 50px 50px;
+     }
+
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .form-control{
+  width: 90%;
+   width: 600px;
+   background-color: darkgrey;
+   border: none;
+   outline: none;
+   border-top: 1px solid gray;
+   color: #fff;
+   font-size: 18px;
+   font-weight:inherit;
+   margin-bottom: 16px;
+ }
+
+ .formButton {
+  text-align: center;
+}
+.submit {
+  display: block;
+  background-color: darkgray;
+  position: relative;
+  font-size: 13px;
+  padding: 12px 34px;
+  top: 28%;
+  margin: auto;
+}
+ /*Hover on the submit button */
+ .submit {
+  transition-duration: 0.4s;
+}
+
+.submit:hover {
+  background-color: #e92949; 
+  color: white;
+}
+
+
+   /* Setting Text1   */
+
+   .text1_on_contact p{
+    display: flex;
+    justify-content: center;
+    } 
+
+   .text1_on_contact p{
+     width: 80%;
+     color: rgb(20, 15, 5);
+     font-size: 50px;
+    margin: auto;
+    text-align:center;
+    position:relative;
+    padding: 50px 50px 50px 60px;
+   }
+
+    /* Setting Text2   */
+
+   .text2_on_contact p{
+   display: flex;
+   justify-content: center;
+   } 
+   .text2_on_contact p{
+    width: 80%;
+    color: rgb(20, 15, 5);
+    font-size: 30px;
+   margin: auto;
+   text-align:center;
+   position:relative;
+   padding-top: 20px;
+   padding-bottom: 20px;
+  /* padding: 50px 600px 20px 1px;*/
+  }
+
+  /* Setting Text3   */
+
+  .text3_on_contact p{
+    display: flex;
+    justify-content: center;
+    } 
+    .text3_on_contact p{
+     width: 80%;
+     color: rgb(20, 15, 5);
+     font-size: 30px;
+    margin: auto;
+    text-align:center;
+    position:relative;
+    padding-top: 10px;
+   padding-bottom: 30px;
+    /*padding: 20px 250px 100px 5px;*/
+   }
+/*----------------------------------MODAL-----------------------------------------*/
+
+.modal {
+  position: fixed;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 20vh 20vw;
+  border: 2px solid #000;
+  width: 70%;
+  min-width: 160px;
+  height: 60vh;
+  min-height: 360px;
+  background: #fff;
+  z-index: 999;
+  background-color: #f5f5f5;
+  padding:80px;
+}
+
+.modal img {
+  position:relative;
+  top: 5vh;
+  left:5vw;
+  width: 10%;   
+  max-width: 6em;
+  padding-bottom: 20px;
+}
+.modal h2 {
+  margin: 0;
+}
+.modal button {
+  color: lightgray;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #6a7b8b;
+  box-shadow: 0 2px 8px #5c5b5b;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  width: 15rem;
+  outline: none;
+  margin-top: 50px;
+  border: none;
+}
+
+#modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(80, 80, 80, 0.5);
+}
+body.modal-active {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hidden{
+  display: none;
+
+}
+
+
+
+/* ----------------------------------------------------------Setting up the Map-----------------------------------------------  */
+   .map{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.map {
+    display: flex;
+    justify-content: center;
+    } 
+.map{
+    width: 90%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+.map{
+  position: relative;
+}  
+
+
+
+
+
+   /*-------------------------------------------------------Setting Footer------------------------------------------------------------- */
+
+   .footer{
+    display: flex;
+    padding: 1% 2%;
+    background-color: rgb(92, 88, 88);
+    justify-content:space-between;
+    align-items: center;
+    margin-top: auto;
+    overflow: hidden;
+   
+  }
+   /*Left most image on Footer */
+   .footer img{
+     width: 150px
+  
+   }
+   .footer_text{
+     color: azure;
+     font: 10px;
+     text-align: center;
+     padding-top: 0px;
+     padding-bottom:0px;
+   }
+    /*Social icons on Footer */
+
+   .social_icon img{
+      width: 30px;
+      text-align: center;
+      
+    }
+ 
+   /* Main logo */
+/*main img {
+  width: 15%;
+}
+
+main div {
+  text-align: center;
+}
+
+/* h2 */
+/*section h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.35rem;
+}
+
+section p {
+  text-align: left;
+  margin: 5% 0;
+}
+
+/* Main contact section */
+/* -- Main contact - Form */
+/*form input {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 2%;
+}
+
+.form-section {
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.form-section input, textarea {
+  border: none;
+  background-color: var(--form-background);
+  color: var(--primary-bg-color);
+  font-family: var(--font-family);
+}
+
+.form-section input:focus, textarea:focus {
+  outline-color: var(--secondary-bg-color);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--primary-bg-color);
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 2%;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 2%;
+  font-size: 1.25rem;
+}
+
+.form-btn, aside button {
+  background-color: var(--secondary-bg-color);
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var(--primary-bg-color);
+  border: none;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.form-required {
+  color: red;
+}
+
+/* Form end */
+/*
+.contact-main {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.contact-main section span {
+  font-size: 1.25rem;
+}
+
+.contact-main iframe {
+  width: 100%;
+}
+
+.contact-main section:last-child {
+  margin: 5% 0;
+}
+
+/* Modal */
+/*
+.modal {
+  padding: 3% 0;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  min-width: 530px;
+  height: 50vh;
+  min-height: 376px;
+  margin: 25vh 15vw;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: solid 1px var(--secondary-bg-2-color);
+}
+
+.modal p {
+  font-weight: bold;
+}
+
+.modal-head {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal h2 {
+  text-transform: uppercase;
+}
+
+aside button {
+  width: 20%;
+  height: 15%;
+  box-shadow: 1px 1px 5px rgb(88, 88, 88);
+}
+
+aside img {
+  height: 8vw;
+  width: auto;
+  align-self: center;
+  margin-right: 10%;
+}
+
+/* Modal background */
+/*
+#modal-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(92, 91, 91, 0.3);
+  overflow: hidden;
+}
+
+.modal-active {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}/*
+
+/* Media queries */
+/*@media (max-width: 730px) {
+  .modal {
+      width: 100vw;
+      margin: 25vh 0;
+  }
+  .modal h2, .modal h3, .modal p {
+      font-size: 1rem;
+  }
+
+  .modal p {
+      font-weight: normal;
+  }
+}
+
+@media (max-width: 700px) {
+  section h2 {
+      font-size: 1.5rem;
+  }
+
+  .contact-main section span {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .contact-main section span {
+      font-size: 1rem;
+  }
+  
+  form input {
+      font-size: 1rem;
+  }
+
+  textarea::placeholder {
+      font-weight: normal;
+  }
+
+  .form-btn {
+      width: 75%;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal p {
+      font-size: 0.75rem;
+  }
+}
+*/

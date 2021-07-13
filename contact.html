@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DÉCOUVREZ NOTRE CAFÉ PHILO</title>
+  <link rel="stylesheet" href="application.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap" rel="stylesheet">
+  <script src="./form.js"defer></script>
+ 
+</head>
+
+
+  <!-- --------------------------------------------------------------------------------------HEADER----------------------------------------------------------->
+
+ 
+ <!-- Creating Header for every pages(top left logo_blanc.png, left top links to another pages and bellow that logo_dark.png and logo's label ) -->
+<section class="Header">
+  <section>
+     <!-- Creating top left logo_blanc.png logo and beside this logo a heading, I called it as "<nav>"" in CSS file to set is position size,font etc) -->
+  <nav>
+       <a href="contact.html"><img src="./Assets/full_logo_white.png" alt="Mr Coffe"></a>
+
+         <!-- Creating three links to other pages named "nav-links" class to call in CSS file fixing their position, color and font) -->
+         <div class="nav-links">
+         <ul>
+          <li><a href="about.html">Accueil</a></li>
+          <li><a href="index.html">Qui sommes-nous?</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+        </div>
+  </nav>
+  </section>
+   <!-- Creating three links to other pages named "nav-links" class to call in CSS file fixing their position, color and font) -->
+
+  <!-- Created another section to place the the logo_dark inside the header class aligned it in the center and gave a header which is bigger than logo_blanc heading,
+    I named a class logo-image and called it in CSS file to fix its position size, fonts and also for the padding top and bottom  -->
+  <section class="logo-image">
+    <div style="text-align: center;">
+   <img src="./Assets/logo_mrcoffee.png" alt="Mr Coffe">
+  </div>
+  </section>
+</section>
+
+
+<!------------------------------------------------------------MODAL-------------------------------------------------->
+
+<body>
+
+  <aside class="modal hidden">
+    <img src="./Assets/logo_dark.png" alt="Mr. Coffee logo dark" />
+    <br />
+    <h2>MERCI</h2>
+    <br />
+    <p> message a bien été envoyé !</p>
+    <br />
+    <p>
+      Nous essaierons d’y répondre au mieux dans les plus brefs<br>
+      délais. À bientot chez Mr.Coffee
+    </p>
+    <br />
+    <br />
+    <button id="close-modal" type="button"><h2>FERMER</h2> 
+    </button>
+    
+  </aside>
+    
+
+
+ 
+    <!----------------------------------------------------CONTACT FORM---------------------------------------------------->
+
+    <main>
+     <div id="modal-overlay" class="hidden"></div> 
+    <section class="form-title">
+   <h2>Dites nous tout !</h2>
+  </div>
+ </section>
+ <section>
+  <div class="contact-form">
+<form id="contact-form">
+  <div>
+    <label for="lastName">Nom * <br> </label>
+    <input id="lastName" type="lastName" name="lastName" class ="form-control" required />
+  </div>
+  <div>
+    <label for="firstName">Prénom *<br> </label>
+    <input id="firstName" type="firstName" name="firstName"  class ="form-control" required />
+  </div>
+  <div>
+    <label for="telephone">Téléphone <br></label>
+    <input id="telephone"type="telephone"name="telephone" class ="form-control" required />
+  </div>
+
+  <div>
+    <label for="email">Adresse mail *<br></label>
+    <input id="email" type="email" name="email"  class ="form-control" required />
+  </div>
+  <div>
+    <label for="message">Message *<br></label>
+    <textarea id="message" name="message" class ="form-control" placeholder="Tapez votre message ici" row="5" required></textarea>
+    </div>
+    <section>
+      <div class = "formButton"></div>
+      <button class ="submit"><b>ENVOYER</b></button>
+      </div>
+    </section>
+</div>
+</form>
+</section>
+
+
+<!-- Setting Text1   -->
+<section class="text1_on_contact">
+    <p>On vous attend !</p>
+</Section>
+<!-- Setting Text2   -->
+<Section class="text2_on_contact">
+    <p>Mr.Coffee<br>
+        15 place Jules Guesde<br>
+        75006 Paris</p>
+</Section>
+<!-- Setting Text3   -->
+<Section class="text3_on_contact">
+    <p>Tel : +33 9 46 25 78 45<br>
+        Mail : contact@mr-coffee.com</p>
+</Section>
+
+<!--<Setting The map by inserting the image -->
+
+<section class="map">
+    <div style="text-align: center;">
+   <img src="./Assets/carte_contact.png" alt="Mr Coffe">
+  </div>
+  </section>
+</section>
+</main>
+</body>
+
+
+   <!------------------------------------------------------------------FOOTER--------------------------------------------------->
+
+  <section class="footer">
+  <a href="contact.html"><img src="/Assets/full_logo_white.png" alt="Mr Coffe"></a>
+  <div class= "footer_text">
+  <p>Suivez nous sur les réseaux sociaux !On vous attend !</p>
+ </div>
+ <div class="social_icon">
+  <img src="./Assets/logo_linkedin.png" alt="Mr Coffe">
+  <img src="./Assets/logo_twitter.png" alt="Mr Coffe">
+  <img src="./Assets/logo_facebook.png" alt="Mr Coffe">
+ </div>
+</section>
+
+</html>
+
